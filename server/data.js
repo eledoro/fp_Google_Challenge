@@ -1,4 +1,4 @@
-const searchResult = [
+const searchResults = [
 {id:1, url:'https://getfutureproof.co.uk/', title:'futureproof', description:'futureproof is a technology training company, launching and developing diverse, high-quality junior talent into your tech teams.'},
 {id:2, url:'https://developer.mozilla.org/en-US/docs/Learn', title:'Learn web development | MDN', description:'20 Aug 2021 — Mozilla developer newsletter: Our newsletter for web developers, which is an excellent resource for all levels of experience. · Learn JavaScript ...'},
 {id:3, url:'https://www.codecademy.com/learn/paths/web-development', title:'Web Development | Codecademy', description:'career PathWeb Development ... Go from no-code to an in-demand junior web developer, at a fraction of the cost of a bootcamp. Start with the front-end by learning ...'},
