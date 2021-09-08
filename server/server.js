@@ -4,4 +4,6 @@ const cors = require('cors');
 const app = express();
 
 
-module.exports = server;
+
+
+module.exports = app;
