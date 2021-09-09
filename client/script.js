@@ -1,6 +1,7 @@
 //const { response } = require("../server/server");
 
 const randomResultUrl = 'http://localhost:3000/lucky';
+const allResultUrl=  'http://localhost:3000/search'
 
 const searchResults = [
   {id:1, url:'https://getfutureproof.co.uk/', title:'futureproof', description:'futureproof is a technology training company, launching and developing diverse, high-quality junior talent into your tech teams.'},
@@ -38,13 +39,15 @@ searchBtn.addEventListener('click', e => {
  mainPage.style.display = 'none';
  searchResultPage.style.display = 'block';
 
-  
-  // to do : fetch all links
+    // to do : fetch all links
   console.log(searchResults)
 
   // to do: render search results page
 
 
+  for (let i=0; i<searchResults.length; i++){
+    addLink(searchResults[i])
+  }
 
 })
 
@@ -60,4 +63,45 @@ feelLuckyBtn.addEventListener('click', e => {
 
 })
 
+
+
+function addLink(smth){
+    const newLink = createLink(smth)
+    document.getElementById('searchResultPage').appendChild(newLink);
+  }
+  
+  
+  
+  
+  function addItem(){
+    const newLink = createLink('should be our json')
+    document.getElementById('searchResultPage').appendChild(newLink);
+  }
+  
+  function createLink(item){
+    const newLink = document.createElement('article');
+    
+    const a1 = document.createElement('a')
+    a1.textContent = item.url;
+    a1.className = "searchResultLink"
+    a1.href = item.url
+    a1.target = "_blank"
+  
+  
+    const a2= document.createElement('a')
+    a2.textContent = item.title;
+    a2.className = "searchResultTitle"
+    a2.href = item.url
+    a2.target = "_blank"
+  
+    const p= document.createElement('p')
+    p.textContent = item.description;
+    p.className = "searchResultDescr"
+  
+    
+    newLink.appendChild(a1);
+    newLink.appendChild(a2);
+    newLink.appendChild(p);
+    return newLink
+  }
 
