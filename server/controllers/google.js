@@ -1,4 +1,4 @@
-const express = require('express');
+/*const express = require('express');
 const router = express.Router();
 
 const SearchResult = require('../models/google')
@@ -9,5 +9,5 @@ router.get('/search', (req, res) => {
 });
 
 router.get('/i_ am_feeling_lucky', (req, res) => {
-    
-})
+    res.send(randomLink())
+}); */

@@ -15,4 +15,4 @@ const searchResults = [
 ]
 
 
-module.exports = { searchResults }
+module.exports = searchResults 

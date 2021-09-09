@@ -1,4 +1,4 @@
-const searchData = require('../data');
+/*const searchData = require('../data');
 
 class SearchResult {
     constructor(data) {
@@ -6,22 +6,20 @@ class SearchResult {
         this.url = data.url;
         this.title = data.title;
         this.description = data.description;
-    }
+    };
 
     static get all() {
-        const searchResults = searchData.map((searchResult) => new SearchResult(searchResult));
-        return searchResults;
-    }
+        const allLinks = searchData.map((searchResult) => new SearchResult(searchResult));
+        return allLinks;
+    };
 
-    static random() {
+    static randomLink() {
         try {
-            let indexNumber = Math.floor(Math.random()*13);
-            let indexShow = searchData.filter((searchResult) => searchResult[] === indexNumber)[0]
-            return new SearchResult(indexShow)
+            let indexNumber = Math.floor(Math.random() * searchData.length);
+            return searchData[indexNumber]
         } catch (err) {
             throw new Error('Something has gone wrong');
         }
-    }    
-    
+    };   
 }
 module.exports = SearchResult
