@@ -1,3 +1,5 @@
+const { application } = require("express");
+
 const searchResults = [
 {id:1, url:'https://getfutureproof.co.uk/', title:'futureproof', description:'futureproof is a technology training company, launching and developing diverse, high-quality junior talent into your tech teams.'},
 {id:2, url:'https://developer.mozilla.org/en-US/docs/Learn', title:'Learn web development | MDN', description:'20 Aug 2021 — Mozilla developer newsletter: Our newsletter for web developers, which is an excellent resource for all levels of experience. · Learn JavaScript ...'},
@@ -11,3 +13,6 @@ const searchResults = [
 {id:9, url:'https://developers.google.com/web', title:'Web | Google Developers', description:'Tools. Chrome DevTools, Lighthouse, Workbox, and more tools to make your life easier and improve your development artistry. Learn more ...'},
 {id:10, url:'https://en.wikipedia.org/wiki/Web_development', title:'Web development - Wikipedia', description:'Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network). Web development can ...'}
 ]
+
+
+module.exports = { searchResults }
