@@ -40,16 +40,15 @@ searchBtn.addEventListener('click', e => {
  searchResultPage.style.display = 'block';
 
     // to do : fetch all links
-  console.log(searchResults)
-
+    fetch(allResultUrl)
+    .then(response => response.json())
+    .then(data => data.forEach(addLink))
   // to do: render search results page
 
 
-  for (let i=0; i<searchResults.length; i++){
-    addLink(searchResults[i])
-  }
-
-})
+  //for (let i=0; i<searchResults.length; i++){
+    //addLink(searchResults[i])
+  })
 
 
 //    I'm feeling lucky
