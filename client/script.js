@@ -1,4 +1,6 @@
-const quotesUrl = 'http://localhost:3000/quotes/random';
+//const { response } = require("../server/server");
+
+const randomResultUrl = 'http://localhost:3000/lucky';
 
 const searchResults = [
   {id:1, url:'https://getfutureproof.co.uk/', title:'futureproof', description:'futureproof is a technology training company, launching and developing diverse, high-quality junior talent into your tech teams.'},
@@ -51,6 +53,11 @@ searchBtn.addEventListener('click', e => {
 
 feelLuckyBtn.addEventListener('click', e => {
   e.preventDefault()
-  window.open(randomResult.url, "_blank")
+  fetch(randomResultUrl)
+   .then(response => response.json())
+   .then(data => window.open(data.url, "_blank"))
+  // .then(window.open(response.url, "_blank"))
+
 })
+
 
