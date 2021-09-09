@@ -4,52 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script defer src="script.js"></script>
     <title>Google</title>
 </head>
 <body>
+  <!--
+
     <header>
-        <nav>
+      <nav>
         <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Store</a>
-            </li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Store</a>
+          </li>
+        </ul>
         
         <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Store</a>
-            </li>
-          </ul>
-
-        </nav>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Store</a>
+          </li>
+        </ul>
         
+      </nav>
+      
     </header>
-
-
-    <section>
-        <img id="googleLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png" alt="Girl in a jacket">
-    <form class="d-flex">
-      <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button id="searchBtn"class="btn btn-outline-success" type="submit">Search</button>
-      <button id="feelLuckyBtn" class="btn btn-outline-success" type="submit">I feel lucky!</button>
-    </form>
-    </section>
-    <footer>
-<p>United Kingdom</p>
-<nav>
     
-</nav>
-    </footer>
     
+  -->
+<!-- ---------------   main page ---------------->
+<section id="mainPage">
+  
+  <img id="googleLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png" alt="logo">
+<form>
+   <div class="searchField">
+     <input id="searchInput" class="search" type="search" placeholder="Search" aria-label="Search">
+    </div>
+     <div class="btnGroup">
+    <button id="searchBtn"class="btn" type="submit">Search</button>
+    <button id="feelLuckyBtn" class="btn" type="submit">I'm feeling lucky!</button>
+  </div>
+</form>
+</section>
+  
+  
+
+</div>
+
+</body>
+<!-- ---------search results page ---------- -->
+
+<section id="searchResultPage">
+    <article>
+        <a href="#" class="searchResultLink" target="_blank">https://www.hello.com</a>
+        <a href="#" class="searchResultTitle" target="_blank">Title</a>
+        <p class="searchResultDescr">Description of the website</p>
+    </article>
+    <article>
+      <a href="#" class="searchResultLink" target="_blank">https://www.hello.com</a>
+      <a href="#" class="searchResultTitle" target="_blank">Lorem ipsum dolor sit amet, con</a>
+      <p class="searchResultDescr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est cum tempore provident quia blanditiis cumque enim. Amet, sit beatae hic consequuntur est fugiat iusto cum, provident corporis voluptatum, odit sint?</p>
+  </article>
+  <article>
+    <a href="#" class="searchResultLink" target="_blank">https://www.hello.com</a>
+    <a href="#" class="searchResultTitle" target="_blank">Title Lorem Ipsum</a>
+    <p class="searchResultDescr">Description of the website</p>
+</article>
+  
+  
+</section>
 
 </body>
 </html>
