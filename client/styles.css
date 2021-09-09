@@ -1,0 +1,126 @@
+body {
+    font-size: 13px;
+  }
+  
+  #mainPage {
+    display: block;
+    padding-top: 20vh;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 25vh;
+  }
+  
+  .logo {
+    padding-bottom: 15px;
+  }
+  
+  .searchDiv {
+    width: 90vw;
+    padding: 8px;
+  background: #fff;
+      display: flex;
+      border: 1px solid #dfe1e5;
+      box-shadow: none;
+      border-radius: 24px;
+      z-index: 3;
+      height: 44px;
+      margin: 0 auto;
+  
+  }
+  
+  .searchInput:hover {
+    border: 1px solid #b9b9b9;
+    border-top-color: #a0a0a0;
+  }
+  
+  .searchInput:focus {
+    outline: none;
+    border: 1px solid #4d90fe;
+  }
+  
+  .btnGroup{
+    text-align: center;
+    margin: 0 auto;
+    width: 270px;
+    padding-top: 20px;
+  }
+  
+  button {
+    display: inline-block;
+    background-color: #f8f9fa;
+      border: 1px solid #f8f9fa;
+      border-radius: 4px;
+      color: #3c4043;
+      font-family: arial,sans-serif;
+      font-size: 14px;
+      margin: 11px 4px;
+      padding: 0 16px;
+      line-height: 27px;
+      height: 36px;
+      min-width: 54px;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+  }
+  
+  button:hover {
+    border: 1px solid #c6c6c6;
+    color: #222;
+    cursor: default;
+  }
+  
+  /* search result   page */
+  
+  #searchResultPage{
+    display: none;
+    padding-top: 20vh;
+    text-align: left;
+    padding-bottom: 20px;
+    margin-bottom: 25vh;
+    margin-left: 150px;
+  
+  }
+  article{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-top: 2vh; 
+   
+    
+  }
+  
+  .searchResultLink{
+    cursor: pointer;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+      line-height: 1.3;
+      color: #202124;
+      font-style: normal;
+      text-align: left;
+     
+    
+  }
+  .searchResultTitle{
+    color: #1a0dab;
+    font-size: 20px;
+    font-family: arial,sans-serif;
+    line-height: 1.3;
+    margin:0;
+    cursor: pointer;
+   
+  }
+  
+  .searchResultDescr{
+    color: #4d5156;
+    word-wrap: break-word;
+    line-height: 1.58;
+    text-align: left;
+    font-family: arial,sans-serif;
+      font-size: 14px;
+     
+  
+  }
+  
+  
+  
